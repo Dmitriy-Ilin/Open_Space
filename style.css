@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.space {
+    background-image: url("space.png");
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.planet-area {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.planet {
+    position: relative;
+    height: 70%;
+    width: 500px;
+    z-index: 1;
+    transform: translate(-3px, 50px);
+}
+
+.rocket {
+   position: absolute;
+    height: 25%;
+    width: 12%;
+    z-index: 2;
+    transform: translate(275px, 170px) rotate(30deg);
+    overflow: hidden;
+}
+
+
+.control-panel {
+    text-align: center;
+    height: 30%;
+    width: 40%;
+    padding: 30px 10px;
+    margin: 10vh;
+    background: repeating-linear-gradient(
+            45deg,
+            #606dbc,
+            #606dbc 10px,
+            #465298 10px,
+            #465298 20px
+    );
+}
+
+.check-buttons, .levers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.levers {
+    padding: 30px 50px;
+}
+
+.check-buttons {
+    padding-top: 10px;
+}
+
+
+input[type=password] {
+    max-width: 200px;
+    max-height: 50px;
+    text-align: center;
+}
+
+input[type=button] {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+input[type=range] {
+    -webkit-appearance: slider-vertical;
+    width: 8px;
+    height: 80px;
+    padding: 0 30px;
+}
+
+
+input[value=Launch] {
+    border: 1px solid white;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+
+input[value=Ok] {
+    border: 1px solid black;
+    color: black;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    border: 2px solid yellow;;
+    border-radius: 5px;
+    color: darkgoldenrod;
+}
+
+
+
+
+
+
+
